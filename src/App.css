@@ -1,0 +1,264 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+
+  
+}
+body{
+  font-family: 'Rubik', sans-serif;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.nav{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  background: url('./images/pattern-bg.png') no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 260px;
+}
+.info{
+  display: flex;
+  margin-top: 40px;
+  padding-left:10px;
+  padding-right:100px;
+  padding-bottom:20px;
+  padding-top:50px;
+  /* border: 2px solid black; */
+  border-radius:15px;
+  position: absolute;
+  top: 150px;
+  background: white;
+  font-size: 18px;
+  
+  
+}
+
+.title {
+  padding-left:95px;
+  top: 40px;
+  align-items: center;
+  position: absolute;
+  padding-right: 40px;
+  color: white;
+  font-style: inherit;
+  font-weight: 700;
+}
+.ip-address{
+  padding-left: 20px;
+}
+.location{
+  padding-left: 20px;
+}
+.timezone{
+  padding-left: 20px;
+
+}
+.search{
+  position: absolute;
+  top: 100px;
+}
+.isp{
+  padding-left: 20px;
+}
+.isp h2{
+  display: flex;
+  flex-direction: column;
+}
+
+
+button{
+  border: none;
+  background: black;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius:15px;   
+}
+input[type="text"]{
+  padding-right: 70px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+  width: 500px;
+}
+.search{
+  display: flex;
+}
+.search img{
+  background-color: black;
+  padding: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+
+}
+.info{
+  font-weight: 500;
+  color: hsl(0, 0%, 59%);
+  font-size: 14px;
+  z-index: 100;
+}
+.info h2{
+  font-weight: 500;
+  padding: 5px;
+  color:hsl(0, 0%, 17%);
+  font-size: 1.7rem;
+}
+.line{
+  border-left: 1px solid hsl(0, 0%, 59%);
+  height: 50px;
+}
+.ip-address{
+  padding-right: 40px;
+}
+.location{
+  padding-right: 40px;
+}
+.location span{
+  display: flex;
+  flex-direction: column;
+}
+.timezone{
+  padding-right:40px;
+  width: 190px;
+}
+.isp{
+  padding-right: 40px;
+  width: 190px;
+}
+.leaflet-container{
+  height: 530px; 
+  width: 100vw;
+  z-index: 1;
+  
+  }
+
+.leaflet-marker-icon{
+  color: black;
+}
+
+@media (max-width: 575px){
+    .info{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      padding: 30px;
+      font-size: 15px;
+      
+    }
+    .location{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+    }
+    .location h2{
+      display: flex;
+      gap: 5px;
+    }
+    .ip-address{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    .timezone{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    .isp{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 270px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .isp h2{
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+    
+    input{
+      padding: 14px;
+      font-size: 12px;
+    }
+    .search{
+      width: 50vw;
+      margin: 0;
+      align-items: center;
+      justify-content: center;
+      
+    }
+    .title{
+      font-size: 25px;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+    }
+    .line{
+      display: none;
+    }
+    .leaflet-container{
+      height: 600px; 
+      
+      }
+}
+
+@media (max-width:768px) {
+
+ .info{
+  width: 76vw;
+ } 
+ .ip-address h2{
+  width: 15vw;
+  padding-right: 10px;
+  font-size: 14px;
+
+ }
+ .location{
+  width: 15vw;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+ }
+ .timezone{
+  width: 15vw;
+ }
+ .isp h2{
+  width: 20vw;
+  padding-right: 100px;
+
+
+ }
+ .search input{
+  padding: 20px;
+ }
+ .leaflet-container{
+  height: 120vw;
+ }
+}
