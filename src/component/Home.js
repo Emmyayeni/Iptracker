@@ -27,11 +27,9 @@ export default function Home() {
     await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_hs40DpRHuAX2wstcbWCyHb9nk8nb1&ipAddress=${ipaddress.ip}`)
       .then((data) => data.json())
       .then(result => {
-        console.log(result)
         setdata(result)
         setlocation(result.location);
-        console.log(result)
-        console.log(result.location.city)
+ 
       })
   }
 
