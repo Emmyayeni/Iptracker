@@ -65,12 +65,7 @@ export default function Home() {
   useEffect(() => {
     fetchapi();
     setTimeout(get,220)
-  
   }, []);
-  useEffect(() => {
-    get()
-  
-  }, [ipaddress]);
   useEffect(() => {
     fetchapi();
     get();
