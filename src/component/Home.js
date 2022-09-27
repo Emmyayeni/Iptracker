@@ -13,7 +13,7 @@ export default function Home() {
   const [ipaddress, setaddress] = useState()
   const navigate = useNavigate()
   async function fetchapi() {
-    await fetch('http://edns.ip-api.com/json').then((address) => address.json())
+    await fetch('https://edns.ip-api.com/json').then((address) => address.json())
       .then(result => {
         console.log(result)
         for (var i in result) {
