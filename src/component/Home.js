@@ -49,7 +49,7 @@ export default function Home() {
 
     return position === null ? null : (
       <Marker position={position}>
-        <Popup>You are here</Popup>
+        <Popup>You are at {Location.city}</Popup>
       </Marker>
     )
   }
@@ -64,8 +64,17 @@ export default function Home() {
   }
   useEffect(() => {
     fetchapi();
-    get();
+    setTimeout(get,220)
+  
   }, []);
+  useEffect(() => {
+    get()
+  
+  }, [ipaddress]);
+  // useEffect(() => {
+  //   fetchapi();
+  //   get();
+  // }, [ipaddress.ip]);
   return (
     // <div>
     //   {datab.map((country)=>{
