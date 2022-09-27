@@ -71,10 +71,10 @@ export default function Home() {
     get()
   
   }, [ipaddress]);
-  // useEffect(() => {
-  //   fetchapi();
-  //   get();
-  // }, [ipaddress.ip]);
+  useEffect(() => {
+    fetchapi();
+    get();
+  }, [ipaddress]);
   return (
     // <div>
     //   {datab.map((country)=>{
