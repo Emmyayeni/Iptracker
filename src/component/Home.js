@@ -24,7 +24,7 @@ export default function Home() {
   }
   async function get() {
     console.log(ipaddress.ip)
-    await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_hs40DpRHuAX2wstcbWCyHb9nk8nb1&ipAddress={ipaddress.ip}`)
+    await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_hs40DpRHuAX2wstcbWCyHb9nk8nb1&ipAddress=${ipaddress.ip}`)
       .then((data) => data.json())
       .then(result => {
         console.log(result)
