@@ -13,7 +13,7 @@ export default function Home() {
   const [search, setsearch] = useState()
   const navigate = useNavigate()
   async function get() {
-    await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_mdNSZ14Oir0SloNb9nh5WXLcx2B6x&ipAddress=${ipAddress}`)
+    await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_hs40DpRHuAX2wstcbWCyHb9nk8nb1&ipAddress=${ipAddress}`)
     .then((data) => data.json())
     .then(result =>{
       console.log(result)
